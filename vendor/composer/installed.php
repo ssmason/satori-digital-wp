@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'ssmason/satori-digital-build',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'ecf45cf5e79294405dd607e0f94460ffecdc8da2',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -41,9 +41,9 @@
             'dev_requirement' => false,
         ),
         'ssmason/satori-digital-build' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'ecf45cf5e79294405dd607e0f94460ffecdc8da2',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
