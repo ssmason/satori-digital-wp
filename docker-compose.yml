@@ -1,0 +1,48 @@
+version: '3.8'
+
+networks:
+  satori_network:
+
+services:
+  wordpress:
+    image: wordpress:latest
+    container_name: satori_wp
+    restart: always
+    ports:
+      - "80:80"  # Change from "8000:80" to "80:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: root
+      WORDPRESS_DB_NAME: satori_db
+    volumes:
+      - ./wordpress:/var/www/html
+    networks:
+      - satori_network
+
+  db:
+    image: mariadb:latest
+    container_name: satori_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: satori_db
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - satori_network
+
+  phpmyadmin:
+    image: arm64v8/phpmyadmin
+    container_name: satori_phpmyadmin
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - satori_network
+
+volumes:
+  db_data:
