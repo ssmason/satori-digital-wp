@@ -1,6 +1,10 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+# Satori Digital - WordPress build
 
+## 📌 Description
+
+**Satori Digital** is a wordpress theme built to deliver the satori website
+ 
 # Deploy Wordpress on Localhost and in Production using Docker Compose
 
 Related blog post:

@@ -3,7 +3,7 @@
         'name' => 'ssmason/satori-digital-build',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'ecf45cf5e79294405dd607e0f94460ffecdc8da2',
+        'reference' => '5b61a9507658d42842baef2c89f63e876aa573bc',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -43,7 +43,7 @@
         'ssmason/satori-digital-build' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'ecf45cf5e79294405dd607e0f94460ffecdc8da2',
+            'reference' => '5b61a9507658d42842baef2c89f63e876aa573bc',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
