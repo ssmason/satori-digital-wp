@@ -5,10 +5,13 @@
 
 **Satori Digital** is a wordpress theme built to deliver the satori website
  
-# Deploy Wordpress on Localhost
-You can automatically deploy a local docker wordpress site in 5 minutes
-using the following commands:
+# Clone the repo
+Clone the repository 
+``` bash
+git clone https://github.com/ssmason/satori-digital-wp.git wp-satori-digital # Build and start installation
 
+```
+# Initialise build with composer and start up docker
 ``` bash
 cd wp-satori-digital
 composer install # Install theme and plugins
